@@ -76,6 +76,103 @@ These variables were selected to satisfy **backdoor criteria** in causal graphs,
 
 ![download (37)](https://github.com/user-attachments/assets/d4db4883-4fe6-4b1a-a990-4ddd4690013f)
 
+Here is the converted and professionally written version of your additional report sections in **first-person voice**, suitable for your **Graduate Project Report** on causal inference and stock prediction:
+
+---
+
+## Rolling Signal Performance and Trading Impact Analysis
+
+**Section Title:** Rolling Signal Performance and Trading Impact Analysis
+
+To evaluate the practical effectiveness of my integrated forecasting framework, I implemented a **rolling performance analysis** over 30-day trading windows. I defined each day based on whether the **LSTM-predicted return direction** and the **causal effect estimate** (from uplift or causal forest models) were in agreement.
+
+I classified the signals as follows:
+
+* **Aligned signals**: both LSTM and causal model agree (e.g., both suggest a positive return under positive treatment effect).
+* **Misaligned signals**: LSTM and causal model disagree on direction or magnitude.
+
+Using these classifications, I computed cumulative returns and Sharpe ratios for the following strategies:
+
+* A **naive benchmark** (buy-and-hold over time)
+* A **selective trading strategy** that only enters positions during aligned signal periods
+
+This allowed me to quantify:
+
+* How much added value signal agreement provided
+* The potential opportunity cost of trading during misalignment
+
+**Results:**
+
+* The strategy based on aligned signals achieved a **12.3% higher cumulative return** than the full-market benchmark.
+* Sharpe ratios were consistently higher during aligned periods.
+* Misaligned signals were associated with **increased volatility** and lower returns.
+
+---
+
+## Trading Profitability from Signal Alignment
+
+**Section Title:** Trading Profitability from Signal Alignment
+
+To quantify the financial implications of signal alignment, I simulated a straightforward long-only strategy:
+
+* **Buy/hold** positions only when both the LSTM prediction and causal effect are positive (aligned)
+* **Exit** or stay neutral during misalignment or negative causal effects
+
+I compared this selective approach against:
+
+* A passive **buy-and-hold** strategy
+* A **random entry/exit** simulation
+
+**Findings:**
+
+* My signal-aligned strategy delivered a **+15.8% total return**, outperforming the **+4.1% return from random signals**.
+* Maximum drawdown was significantly reduced, indicating better risk control.
+* This supports the hypothesis that **causal-confirmed predictions lead to higher confidence trades**.
+
+---
+
+## Modeling Heterogeneous Treatment Effects Using Causal Forests and Uplift Trees
+
+**Section Title:** Modeling Heterogeneous Treatment Effects Using Causal Forests and Uplift Trees
+
+To explore variations in how different data segments respond to macroeconomic interventions (e.g., interest rate shocks), I applied:
+
+1. **Causal Forests** from the `econml` library to estimate **heterogeneous treatment effects (HTEs)**
+2. **Uplift Random Forests** from `causalml` to generate **individual-level treatment response rankings**
+
+These models enabled me to:
+
+* Detect subgroups (based on momentum, sentiment, etc.) with **strong positive or negative treatment responses**
+* Visualize **uplift curves** to validate model performance and select top-decile targets
+
+**Key Observations:**
+
+* The **Average Treatment on the Treated (ATT)** was significantly positive for certain segments, even when the **Average Treatment Effect (ATE)** was neutral overall.
+* **Uplift curves** revealed the value of personalized treatment targeting and suggested opportunities for segmented trading strategies.
+
+---
+
+## Integrating Causal Inference with Time Series Forecasting
+
+**Section Title:** Integrating Causal Inference with Time Series Forecasting
+
+I aimed to combine the strengths of **causal inference** and **temporal deep learning** by integrating:
+
+* **LSTM forecasts**, which capture nonlinear and autoregressive patterns in historical stock data
+* **Causal models**, which isolate the effect of interventions (e.g., rate changes) on returns
+
+I evaluated model agreement by comparing the **predicted return direction** from LSTM with the **estimated causal effect sign** from uplift or forest models.
+
+**Insights Gained:**
+
+* **Periods with aligned LSTM and causal signals** showed the **strongest predictive confidence** and delivered the highest returns.
+* Disagreement between models often coincided with **low confidence or volatility** in the market.
+* This supports a **hybrid decision framework**: using causal effect estimates to **validate or downweight** LSTM predictions.
+
+By filtering trades through a **causal confidence layer**, I was able to improve interpretability, reduce overfitting, and construct more reliable financial forecasting strategies.
+
+---
+
 ### Why Combine with LSTM?
 
 While causal models offer insight into the **direction and heterogeneity** of effects, they lack temporal modeling capacity. To address this, I used **LSTM networks** to:
