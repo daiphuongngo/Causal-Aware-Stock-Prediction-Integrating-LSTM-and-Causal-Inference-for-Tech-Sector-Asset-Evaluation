@@ -8,7 +8,7 @@
 
 ## CSCI S-278	**Applied Quantitative Finance and Machine Learning** (Python)
 
-## Professors: MarcAntonio, PhD
+## Professors: Marc Antonio, PhD
 
 **Head of Research and Data Science, Digital Data Design Institute, Harvard University**
 
