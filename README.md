@@ -152,7 +152,7 @@ These models enabled me to:
 
 ---
 
-## Integrating Causal Inference with Time Series Forecasting
+## Integrating Causal Inference with Time Series Forecasting (to be continued)
 
 **Section Title:** Integrating Causal Inference with Time Series Forecasting
 
@@ -173,7 +173,7 @@ By filtering trades through a **causal confidence layer**, I was able to improve
 
 ---
 
-### Why Combine with LSTM?
+### Why Combine with LSTM? (to be continued)
 
 While causal models offer insight into the **direction and heterogeneity** of effects, they lack temporal modeling capacity. To address this, I used **LSTM networks** to:
 
