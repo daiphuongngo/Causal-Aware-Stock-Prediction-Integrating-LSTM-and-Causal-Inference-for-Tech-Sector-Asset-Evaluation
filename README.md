@@ -62,11 +62,11 @@ To support **causal modeling and predictive learning**, I included the following
 
 * **Stock Returns**: Logarithmic return between consecutive closing prices.
 
-### Treatment Variable:
+### Simulated Treatment Variable:
 
 * **Interest Rate Shock Indicator**: A binary variable indicating whether the interest rate is above its rolling median. This simulates the "treatment" in causal inference.
 
-### Covariates:
+### Simulated Covariates:
 
 * **Momentum**: Captures recent price trends; useful as a proxy for investor behavior.
 * **Market Sentiment**: Derived from news APIs or public index (e.g., VIX, sentiment score); controls for public perception not captured in price data.
