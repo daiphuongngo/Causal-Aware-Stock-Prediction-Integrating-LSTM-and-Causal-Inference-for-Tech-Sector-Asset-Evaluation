@@ -48,7 +48,7 @@ These firms were selected due to their **high market capitalization**, **liquidi
 
 * Daily historical stock prices (Open, High, Low, Close, Volume)
 * Derived features such as daily **returns**, **momentum**, and **volatility**
-* Macro factors: **Interest rates**, **market sentiment scores**, and **news sentiment polarity**
+* Simulated macro factors: **Interest rates**, **market sentiment scores**, and **news sentiment polarity**
 
 Each stock's time series data was aligned with **external economic events**, enabling both **supervised learning** and **causal analysis of treatment effects** (e.g., how a spike in interest rates affects AAPL returns).
 
