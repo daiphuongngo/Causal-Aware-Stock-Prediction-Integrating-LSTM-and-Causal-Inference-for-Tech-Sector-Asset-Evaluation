@@ -76,8 +76,6 @@ These variables were selected to satisfy **backdoor criteria** in causal graphs,
 
 ![download (37)](https://github.com/user-attachments/assets/d4db4883-4fe6-4b1a-a990-4ddd4690013f)
 
-Here is the converted and professionally written version of your additional report sections in **first-person voice**, suitable for your **Graduate Project Report** on causal inference and stock prediction:
-
 ---
 
 ## Rolling Signal Performance and Trading Impact Analysis
