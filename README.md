@@ -78,7 +78,7 @@ These variables were selected to satisfy **backdoor criteria** in causal graphs,
 
 ---
 
-## Rolling Signal Performance and Trading Impact Analysis
+## Rolling Signal Performance and Trading Impact Analysis (to be continued)
 
 **Section Title:** Rolling Signal Performance and Trading Impact Analysis
 
