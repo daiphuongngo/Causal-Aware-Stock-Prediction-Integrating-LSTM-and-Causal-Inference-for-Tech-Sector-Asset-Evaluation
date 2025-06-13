@@ -101,7 +101,7 @@ This allowed me to quantify:
 
 **Results:**
 
-* The strategy based on aligned signals achieved a **12.3% higher cumulative return** than the full-market benchmark.
+* This strategy based on aligned signals achieved a **12.3% higher cumulative return** than the full-market benchmark.
 * Sharpe ratios were consistently higher during aligned periods.
 * Misaligned signals were associated with **increased volatility** and lower returns.
 
