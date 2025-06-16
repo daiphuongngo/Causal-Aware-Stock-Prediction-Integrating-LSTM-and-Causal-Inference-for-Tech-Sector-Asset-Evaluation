@@ -22,7 +22,7 @@
 
 In this project, I aimed to enhance the accuracy and interpretability of stock market forecasting by combining traditional time series deep learning techniques with modern causal inference methodologies. Specifically, I explored how causal reasoning can uncover true treatment effects (e.g., changes in macroeconomic indicators like interest rates) on stock returns, while LSTM models capture nonlinear time-dependent patterns in historical prices and momentum indicators.
 
-The core innovation lies in detecting when both the **causal effect of a treatment** and **forecasted return direction** agree, indicating high-confidence trading signals. I trained causal forest models and uplift random forest classifiers to uncover heterogeneous treatment effects (HTEs) on stock returns. Meanwhile, I deployed LSTM models to generate return forecasts based on past patterns.
+The core innovation lies in detecting when both the **causal effect of a treatment** and **forecasted return direction** agree, indicating high-confidence trading signals. I trained causal forest models and uplift random forest classifiers to uncover heterogeneous treatment effects (HTEs) on stock returns. Meanwhile, I deployed LSTM models to generate return forecasts based off past patterns.
 
 By integrating these two perspectives, I developed a framework that flags **aligned vs. misaligned periods**, visualizes their impact on cumulative profit/loss, and simulates trading strategies accordingly. This hybrid approach offers both **interpretability (via causal inference)** and **predictive strength (via RNN-LSTM)** for portfolio management decisions.
 
