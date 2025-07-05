@@ -119,7 +119,7 @@ To quantify the financial implications of signal alignment, I simulated a straig
 I compared this selective approach against:
 
 * A passive **buy-and-hold** strategy
-* A **random entry/exit** simulation
+* A **random entry / exit** simulation
 
 **Findings:**
 
