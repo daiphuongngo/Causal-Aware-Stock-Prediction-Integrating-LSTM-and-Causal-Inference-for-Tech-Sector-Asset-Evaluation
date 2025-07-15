@@ -178,7 +178,7 @@ While causal models offer insight into the **direction and heterogeneity** of ef
 * Forecast daily returns based on lagged time series inputs
 * Complement the causal model by detecting patterns that do not necessarily stem from external interventions
 
-Together, this architecture balances **why** stock returns change (causal reasoning) with **how** they are likely to evolve (deep learning forecast), offering a powerful decision framework for financial applications.
+Together, this architecture balances why stock returns change (causal reasoning) with **how** they are likely to evolve (deep learning forecast), offering a powerful decision framework for financial applications.
 
 ![download (38)](https://github.com/user-attachments/assets/316444a6-651b-4743-b62a-2f7bd4be1beb)
 
